@@ -1,0 +1,925 @@
+2019-07-24 20:33:46.423  INFO 9696 --- [main] com.example.VueDemo.VueDemoApplication   : Starting VueDemoApplication on LAPTOP-G9VCH9LD with PID 9696 (D:\github\vue_demo_back_end-master\out\production\classes started by Wille in D:\github\vue_demo_back_end-master)
+2019-07-24 20:33:46.474  INFO 9696 --- [main] com.example.VueDemo.VueDemoApplication   : The following profiles are active: local
+2019-07-24 20:33:48.863  INFO 9696 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-24 20:33:48.996  INFO 9696 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109ms. Found 1 repository interfaces.
+2019-07-24 20:33:49.650  INFO 9696 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f7ea45fc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-24 20:33:51.446  INFO 9696 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-07-24 20:33:51.582  INFO 9696 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-24 20:33:51.583  INFO 9696 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-24 20:33:51.986  INFO 9696 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-24 20:33:51.986 DEBUG 9696 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-07-24 20:33:51.986  INFO 9696 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5419 ms
+2019-07-24 20:33:52.704  INFO 9696 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-24 20:33:53.128  INFO 9696 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-24 20:33:55.562  INFO 9696 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 20:33:56.070 DEBUG 9696 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-24 20:33:56.557  INFO 9696 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-24 20:33:56.577 DEBUG 9696 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-24 20:33:56.631  WARN 9696 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-24 20:33:56.669 DEBUG 9696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-07-24 20:33:56.700 DEBUG 9696 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-24 20:33:56.714 DEBUG 9696 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-24 20:33:57.054  INFO 9696 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-24 20:33:57.156  INFO 9696 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-07-24 20:33:57.163  INFO 9696 --- [main] com.example.VueDemo.VueDemoApplication   : Started VueDemoApplication in 11.82 seconds (JVM running for 13.518)
+2019-07-24 20:44:18.539  INFO 9696 --- [http-nio-8888-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-24 20:44:18.540  INFO 9696 --- [http-nio-8888-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-24 20:44:18.541 DEBUG 9696 --- [http-nio-8888-exec-10] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-07-24 20:44:18.554 DEBUG 9696 --- [http-nio-8888-exec-10] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-07-24 20:44:18.554  INFO 9696 --- [http-nio-8888-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-07-24 20:44:18.603 DEBUG 9696 --- [http-nio-8888-exec-10] o.s.web.servlet.DispatcherServlet        : OPTIONS "//todos", parameters={}
+2019-07-24 20:44:18.613 DEBUG 9696 --- [http-nio-8888-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 20:44:18.657 DEBUG 9696 --- [http-nio-8888-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 20:44:18.697 DEBUG 9696 --- [http-nio-8888-exec-9] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 20:44:18.699 DEBUG 9696 --- [http-nio-8888-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 20:44:18.838 DEBUG 9696 --- [http-nio-8888-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@39b4aff0]
+2019-07-24 20:44:19.319 DEBUG 9696 --- [http-nio-8888-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler public com.example.VueDemo.ResultError com.example.VueDemo.GlobalExceptionHandler.handleException(java.lang.RuntimeException)
+2019-07-24 20:44:19.346 DEBUG 9696 --- [http-nio-8888-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 20:44:19.347 DEBUG 9696 --- [http-nio-8888-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.VueDemo.ResultError@38afc9c]
+2019-07-24 20:44:19.360 DEBUG 9696 --- [http-nio-8888-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.orm.jpa.JpaSystemException: ids for this class must be manually assigned before calling save(): com.example.VueDemo.entity.Item; nested exception is org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.example.VueDemo.entity.Item]
+2019-07-24 20:44:19.360 DEBUG 9696 --- [http-nio-8888-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 20:44:23.217 DEBUG 9696 --- [http-nio-8888-exec-8] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 20:44:23.218 DEBUG 9696 --- [http-nio-8888-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 20:44:23.221 DEBUG 9696 --- [http-nio-8888-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@1551d597]
+2019-07-24 20:44:23.225 DEBUG 9696 --- [http-nio-8888-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler public com.example.VueDemo.ResultError com.example.VueDemo.GlobalExceptionHandler.handleException(java.lang.RuntimeException)
+2019-07-24 20:44:23.228 DEBUG 9696 --- [http-nio-8888-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 20:44:23.229 DEBUG 9696 --- [http-nio-8888-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.VueDemo.ResultError@3a84cc39]
+2019-07-24 20:44:23.230 DEBUG 9696 --- [http-nio-8888-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.orm.jpa.JpaSystemException: ids for this class must be manually assigned before calling save(): com.example.VueDemo.entity.Item; nested exception is org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.example.VueDemo.entity.Item]
+2019-07-24 20:44:23.230 DEBUG 9696 --- [http-nio-8888-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 20:46:18.163  INFO 20544 --- [main] com.example.VueDemo.VueDemoApplication   : Starting VueDemoApplication on LAPTOP-G9VCH9LD with PID 20544 (D:\github\vue_demo_back_end-master\out\production\classes started by Wille in D:\github\vue_demo_back_end-master)
+2019-07-24 20:46:18.166  INFO 20544 --- [main] com.example.VueDemo.VueDemoApplication   : The following profiles are active: local
+2019-07-24 20:46:19.620  INFO 20544 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-24 20:46:19.726  INFO 20544 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92ms. Found 1 repository interfaces.
+2019-07-24 20:46:20.327  INFO 20544 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$19776d64] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-24 20:46:21.308  INFO 20544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-07-24 20:46:21.402  INFO 20544 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-24 20:46:21.403  INFO 20544 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-24 20:46:21.695  INFO 20544 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-24 20:46:21.696 DEBUG 20544 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-07-24 20:46:21.696  INFO 20544 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3420 ms
+2019-07-24 20:46:22.322  INFO 20544 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-24 20:46:22.605  INFO 20544 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-24 20:46:24.482  INFO 20544 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 20:46:25.044 DEBUG 20544 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-24 20:46:25.240  INFO 20544 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-24 20:46:25.259 DEBUG 20544 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-24 20:46:25.313  WARN 20544 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-24 20:46:25.351 DEBUG 20544 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-07-24 20:46:25.367 DEBUG 20544 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-24 20:46:25.379 DEBUG 20544 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-24 20:46:25.700  INFO 20544 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-24 20:46:25.791  INFO 20544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-07-24 20:46:25.796  INFO 20544 --- [main] com.example.VueDemo.VueDemoApplication   : Started VueDemoApplication in 8.655 seconds (JVM running for 9.533)
+2019-07-24 20:46:55.886  INFO 20544 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-24 20:46:55.887  INFO 20544 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-24 20:46:55.887 DEBUG 20544 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-07-24 20:46:55.898 DEBUG 20544 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-07-24 20:46:55.898  INFO 20544 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-07-24 20:46:55.929 DEBUG 20544 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 20:46:55.944 DEBUG 20544 --- [http-nio-8888-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 20:46:56.103 DEBUG 20544 --- [http-nio-8888-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@72adbffb]
+2019-07-24 20:46:56.463 DEBUG 20544 --- [http-nio-8888-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 20:46:56.467 DEBUG 20544 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 20:48:28.014 DEBUG 20544 --- [http-nio-8888-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2019-07-24 20:48:28.016 DEBUG 20544 --- [http-nio-8888-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2019-07-24 20:48:28.047 DEBUG 20544 --- [http-nio-8888-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 20:49:17.250 DEBUG 20544 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 20:49:17.251 DEBUG 20544 --- [http-nio-8888-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 20:49:17.252 DEBUG 20544 --- [http-nio-8888-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@2c10535c]
+2019-07-24 20:49:17.256 DEBUG 20544 --- [http-nio-8888-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler public com.example.VueDemo.ResultError com.example.VueDemo.GlobalExceptionHandler.handleException(java.lang.RuntimeException)
+2019-07-24 20:49:17.278 DEBUG 20544 --- [http-nio-8888-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 20:49:17.279 DEBUG 20544 --- [http-nio-8888-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.VueDemo.ResultError@448aaf02]
+2019-07-24 20:49:17.291 DEBUG 20544 --- [http-nio-8888-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2019-07-24 20:49:17.297 DEBUG 20544 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 20:49:24.193 DEBUG 20544 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 20:49:24.194 DEBUG 20544 --- [http-nio-8888-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 20:49:24.195 DEBUG 20544 --- [http-nio-8888-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@2967a22c]
+2019-07-24 20:49:24.197 DEBUG 20544 --- [http-nio-8888-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler public com.example.VueDemo.ResultError com.example.VueDemo.GlobalExceptionHandler.handleException(java.lang.RuntimeException)
+2019-07-24 20:49:24.199 DEBUG 20544 --- [http-nio-8888-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 20:49:24.200 DEBUG 20544 --- [http-nio-8888-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.VueDemo.ResultError@3d1f67ba]
+2019-07-24 20:49:24.201 DEBUG 20544 --- [http-nio-8888-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2019-07-24 20:49:24.202 DEBUG 20544 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 20:49:49.734 DEBUG 20544 --- [http-nio-8888-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2019-07-24 20:49:49.735 DEBUG 20544 --- [http-nio-8888-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2019-07-24 20:49:49.749 DEBUG 20544 --- [http-nio-8888-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 20:50:10.892 DEBUG 20544 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 20:50:10.894 DEBUG 20544 --- [http-nio-8888-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 20:50:10.895 DEBUG 20544 --- [http-nio-8888-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@515261ab]
+2019-07-24 20:50:10.897 DEBUG 20544 --- [http-nio-8888-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler public com.example.VueDemo.ResultError com.example.VueDemo.GlobalExceptionHandler.handleException(java.lang.RuntimeException)
+2019-07-24 20:50:10.899 DEBUG 20544 --- [http-nio-8888-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 20:50:10.900 DEBUG 20544 --- [http-nio-8888-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.VueDemo.ResultError@71e2d084]
+2019-07-24 20:50:10.901 DEBUG 20544 --- [http-nio-8888-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2019-07-24 20:50:10.902 DEBUG 20544 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 20:51:47.569  INFO 21624 --- [main] com.example.VueDemo.VueDemoApplication   : Starting VueDemoApplication on LAPTOP-G9VCH9LD with PID 21624 (D:\github\vue_demo_back_end-master\out\production\classes started by Wille in D:\github\vue_demo_back_end-master)
+2019-07-24 20:51:47.573  INFO 21624 --- [main] com.example.VueDemo.VueDemoApplication   : The following profiles are active: local
+2019-07-24 20:51:49.388  INFO 21624 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-24 20:51:49.581  INFO 21624 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 153ms. Found 1 repository interfaces.
+2019-07-24 20:51:50.454  INFO 21624 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f7e2d687] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-24 20:51:51.393  INFO 21624 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-07-24 20:51:51.492  INFO 21624 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-24 20:51:51.493  INFO 21624 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-24 20:51:51.821  INFO 21624 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-24 20:51:51.821 DEBUG 21624 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-07-24 20:51:51.821  INFO 21624 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4196 ms
+2019-07-24 20:51:52.497  INFO 21624 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-24 20:51:52.932  INFO 21624 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-24 20:51:55.336  INFO 21624 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 20:51:55.935 DEBUG 21624 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-24 20:51:56.164  INFO 21624 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-24 20:51:56.183 DEBUG 21624 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-24 20:51:56.240  WARN 21624 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-24 20:51:56.281 DEBUG 21624 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-07-24 20:51:56.295 DEBUG 21624 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-24 20:51:56.309 DEBUG 21624 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-24 20:51:56.661  INFO 21624 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-24 20:51:56.781  INFO 21624 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-07-24 20:51:56.790  INFO 21624 --- [main] com.example.VueDemo.VueDemoApplication   : Started VueDemoApplication in 13.665 seconds (JVM running for 14.655)
+2019-07-24 20:52:55.026  INFO 21624 --- [http-nio-8888-exec-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-24 20:52:55.027  INFO 21624 --- [http-nio-8888-exec-6] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-24 20:52:55.028 DEBUG 21624 --- [http-nio-8888-exec-6] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-07-24 20:52:55.039 DEBUG 21624 --- [http-nio-8888-exec-6] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-07-24 20:52:55.040  INFO 21624 --- [http-nio-8888-exec-6] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-07-24 20:52:55.042 DEBUG 21624 --- [http-nio-8888-exec-6] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 20:52:55.052 DEBUG 21624 --- [http-nio-8888-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 20:52:55.171 DEBUG 21624 --- [http-nio-8888-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@375975f6]
+2019-07-24 20:52:55.437 DEBUG 21624 --- [http-nio-8888-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler public com.example.VueDemo.ResultError com.example.VueDemo.GlobalExceptionHandler.handleException(java.lang.RuntimeException)
+2019-07-24 20:52:55.465 DEBUG 21624 --- [http-nio-8888-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 20:52:55.466 DEBUG 21624 --- [http-nio-8888-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.VueDemo.ResultError@7412f853]
+2019-07-24 20:52:55.478 DEBUG 21624 --- [http-nio-8888-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2019-07-24 20:52:55.483 DEBUG 21624 --- [http-nio-8888-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 20:53:01.937 DEBUG 21624 --- [http-nio-8888-exec-8] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 20:53:01.937 DEBUG 21624 --- [http-nio-8888-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 20:53:01.939 DEBUG 21624 --- [http-nio-8888-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@18aeec1a]
+2019-07-24 20:53:01.942 DEBUG 21624 --- [http-nio-8888-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler public com.example.VueDemo.ResultError com.example.VueDemo.GlobalExceptionHandler.handleException(java.lang.RuntimeException)
+2019-07-24 20:53:01.945 DEBUG 21624 --- [http-nio-8888-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 20:53:01.946 DEBUG 21624 --- [http-nio-8888-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.VueDemo.ResultError@4c81432]
+2019-07-24 20:53:01.946 DEBUG 21624 --- [http-nio-8888-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2019-07-24 20:53:01.947 DEBUG 21624 --- [http-nio-8888-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 20:56:15.044  INFO 4380 --- [main] com.example.VueDemo.VueDemoApplication   : Starting VueDemoApplication on LAPTOP-G9VCH9LD with PID 4380 (D:\github\vue_demo_back_end-master\out\production\classes started by Wille in D:\github\vue_demo_back_end-master)
+2019-07-24 20:56:15.047  INFO 4380 --- [main] com.example.VueDemo.VueDemoApplication   : The following profiles are active: local
+2019-07-24 20:56:17.039  INFO 4380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-24 20:56:17.128  INFO 4380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76ms. Found 1 repository interfaces.
+2019-07-24 20:56:17.727  INFO 4380 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5806439f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-24 20:56:18.567  INFO 4380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-07-24 20:56:18.690  INFO 4380 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-24 20:56:18.690  INFO 4380 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-24 20:56:18.975  INFO 4380 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-24 20:56:18.976 DEBUG 4380 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-07-24 20:56:18.976  INFO 4380 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3797 ms
+2019-07-24 20:56:19.754  INFO 4380 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-24 20:56:20.042  INFO 4380 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-24 20:56:21.646  INFO 4380 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 20:56:22.051 DEBUG 4380 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-24 20:56:22.416  INFO 4380 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-24 20:56:22.434 DEBUG 4380 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-24 20:56:22.488  WARN 4380 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-24 20:56:22.535 DEBUG 4380 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2019-07-24 20:56:22.553 DEBUG 4380 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-24 20:56:22.568 DEBUG 4380 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-24 20:56:22.892  INFO 4380 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-24 20:56:22.979  INFO 4380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-07-24 20:56:22.988  INFO 4380 --- [main] com.example.VueDemo.VueDemoApplication   : Started VueDemoApplication in 8.887 seconds (JVM running for 10.206)
+2019-07-24 20:56:56.504  INFO 4380 --- [http-nio-8888-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-24 20:56:56.504  INFO 4380 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-24 20:56:56.504 DEBUG 4380 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-07-24 20:56:56.520 DEBUG 4380 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-07-24 20:56:56.520  INFO 4380 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2019-07-24 20:56:56.543 DEBUG 4380 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : OPTIONS "//todos", parameters={}
+2019-07-24 20:56:56.552 DEBUG 4380 --- [http-nio-8888-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 20:56:56.583 DEBUG 4380 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 20:56:56.604 DEBUG 4380 --- [http-nio-8888-exec-3] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 20:56:56.606 DEBUG 4380 --- [http-nio-8888-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 20:56:56.690 DEBUG 4380 --- [http-nio-8888-exec-3] .w.s.m.m.a.ServletInvocableHandlerMethod : Could not resolve parameter [0] in public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item): JSON parse error: Cannot construct instance of `com.example.VueDemo.entity.Item` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('曾志威'); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.example.VueDemo.entity.Item` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('曾志威')
+ at [Source: (PushbackInputStream); line: 1, column: 1]
+2019-07-24 20:56:56.697 DEBUG 4380 --- [http-nio-8888-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler public com.example.VueDemo.ResultError com.example.VueDemo.GlobalExceptionHandler.handleException(java.lang.RuntimeException)
+2019-07-24 20:56:56.733 DEBUG 4380 --- [http-nio-8888-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 20:56:56.735 DEBUG 4380 --- [http-nio-8888-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.VueDemo.ResultError@17131e6]
+2019-07-24 20:56:56.755 DEBUG 4380 --- [http-nio-8888-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.example.VueDemo.entity.Item` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('曾志威'); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.example.VueDemo.entity.Item` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('曾志威')
+ at [Source: (PushbackInputStream); line: 1, column: 1]]
+2019-07-24 20:56:56.755 DEBUG 4380 --- [http-nio-8888-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 20:57:13.347 DEBUG 4380 --- [http-nio-8888-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2019-07-24 20:57:13.349 DEBUG 4380 --- [http-nio-8888-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2019-07-24 20:57:13.362 DEBUG 4380 --- [http-nio-8888-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2019-07-24 21:01:13.250  INFO 22988 --- [main] com.example.VueDemo.VueDemoApplication   : Starting VueDemoApplication on LAPTOP-G9VCH9LD with PID 22988 (D:\github\vue_demo_back_end-master\out\production\classes started by Wille in D:\github\vue_demo_back_end-master)
+2019-07-24 21:01:13.254  INFO 22988 --- [main] com.example.VueDemo.VueDemoApplication   : The following profiles are active: local
+2019-07-24 21:01:15.005  INFO 22988 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-24 21:01:15.088  INFO 22988 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70ms. Found 1 repository interfaces.
+2019-07-24 21:01:15.639  INFO 22988 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6696346f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-24 21:01:16.371  INFO 22988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-07-24 21:01:16.472  INFO 22988 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-24 21:01:16.472  INFO 22988 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-24 21:01:16.753  INFO 22988 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-24 21:01:16.754 DEBUG 22988 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-07-24 21:01:16.754  INFO 22988 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3420 ms
+2019-07-24 21:01:17.420  INFO 22988 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-24 21:01:17.637  INFO 22988 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-24 21:01:19.159  INFO 22988 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 21:01:19.554 DEBUG 22988 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-24 21:01:19.892  INFO 22988 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-24 21:01:19.909 DEBUG 22988 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-24 21:01:19.961  WARN 22988 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-24 21:01:19.996 DEBUG 22988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2019-07-24 21:01:20.010 DEBUG 22988 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-24 21:01:20.020 DEBUG 22988 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-24 21:01:20.338  INFO 22988 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-24 21:01:20.437  INFO 22988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-07-24 21:01:20.438  INFO 22988 --- [main] com.example.VueDemo.VueDemoApplication   : Started VueDemoApplication in 8.004 seconds (JVM running for 8.97)
+2019-07-24 21:01:43.930  INFO 22988 --- [http-nio-8888-exec-9] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-24 21:01:43.932  INFO 22988 --- [http-nio-8888-exec-9] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-24 21:01:43.933 DEBUG 22988 --- [http-nio-8888-exec-9] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-07-24 21:01:43.947 DEBUG 22988 --- [http-nio-8888-exec-9] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-07-24 21:01:43.947  INFO 22988 --- [http-nio-8888-exec-9] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2019-07-24 21:01:43.952 DEBUG 22988 --- [http-nio-8888-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2019-07-24 21:01:43.961 DEBUG 22988 --- [http-nio-8888-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2019-07-24 21:01:44.017 DEBUG 22988 --- [http-nio-8888-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:02:20.577  INFO 17044 --- [main] com.example.VueDemo.VueDemoApplication   : Starting VueDemoApplication on LAPTOP-G9VCH9LD with PID 17044 (D:\github\vue_demo_back_end-master\out\production\classes started by Wille in D:\github\vue_demo_back_end-master)
+2019-07-24 21:02:20.580  INFO 17044 --- [main] com.example.VueDemo.VueDemoApplication   : The following profiles are active: local
+2019-07-24 21:02:22.073  INFO 17044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-24 21:02:22.156  INFO 17044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72ms. Found 1 repository interfaces.
+2019-07-24 21:02:22.673  INFO 17044 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d722f2bf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-24 21:02:23.603  INFO 17044 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-07-24 21:02:23.707  INFO 17044 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-24 21:02:23.708  INFO 17044 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-24 21:02:24.028  INFO 17044 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-24 21:02:24.029 DEBUG 17044 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-07-24 21:02:24.036  INFO 17044 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3377 ms
+2019-07-24 21:02:24.689  INFO 17044 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-24 21:02:24.952  INFO 17044 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-24 21:02:26.536  INFO 17044 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 21:02:26.988 DEBUG 17044 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-24 21:02:27.349  INFO 17044 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-24 21:02:27.369 DEBUG 17044 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-24 21:02:27.418  WARN 17044 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-24 21:02:27.478 DEBUG 17044 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2019-07-24 21:02:27.497 DEBUG 17044 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-24 21:02:27.510 DEBUG 17044 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-24 21:02:27.922  INFO 17044 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-24 21:02:28.038  INFO 17044 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-07-24 21:02:28.043  INFO 17044 --- [main] com.example.VueDemo.VueDemoApplication   : Started VueDemoApplication in 8.255 seconds (JVM running for 9.064)
+2019-07-24 21:04:27.600  INFO 24112 --- [main] com.example.VueDemo.VueDemoApplication   : Starting VueDemoApplication on LAPTOP-G9VCH9LD with PID 24112 (D:\github\vue_demo_back_end-master\out\production\classes started by Wille in D:\github\vue_demo_back_end-master)
+2019-07-24 21:04:27.603  INFO 24112 --- [main] com.example.VueDemo.VueDemoApplication   : The following profiles are active: local
+2019-07-24 21:04:29.315  INFO 24112 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-24 21:04:29.420  INFO 24112 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94ms. Found 1 repository interfaces.
+2019-07-24 21:04:30.005  INFO 24112 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$66a53a06] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-24 21:04:30.892  INFO 24112 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2019-07-24 21:04:31.010  INFO 24112 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-24 21:04:31.010  INFO 24112 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-24 21:04:31.307  INFO 24112 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-24 21:04:31.308 DEBUG 24112 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-07-24 21:04:31.308  INFO 24112 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3628 ms
+2019-07-24 21:04:31.931  INFO 24112 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-24 21:04:32.136  INFO 24112 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-24 21:04:33.530  INFO 24112 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 21:04:33.951 DEBUG 24112 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-24 21:04:34.331  INFO 24112 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-24 21:04:34.355 DEBUG 24112 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-24 21:04:34.414  WARN 24112 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-24 21:04:34.464 DEBUG 24112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2019-07-24 21:04:34.475 DEBUG 24112 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-24 21:04:34.486 DEBUG 24112 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-24 21:04:34.833  INFO 24112 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-24 21:04:34.943  INFO 24112 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2019-07-24 21:04:34.945  INFO 24112 --- [main] com.example.VueDemo.VueDemoApplication   : Started VueDemoApplication in 8.092 seconds (JVM running for 8.891)
+2019-07-24 21:05:33.914  INFO 24112 --- [http-nio-8088-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-24 21:05:33.914  INFO 24112 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-24 21:05:33.915 DEBUG 24112 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-07-24 21:05:33.926 DEBUG 24112 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-07-24 21:05:33.926  INFO 24112 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-07-24 21:05:33.928 DEBUG 24112 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : OPTIONS "//todos", parameters={}
+2019-07-24 21:05:33.938 DEBUG 24112 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:05:33.966 DEBUG 24112 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:05:33.978 DEBUG 24112 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:05:33.981 DEBUG 24112 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:05:34.076 DEBUG 24112 --- [http-nio-8088-exec-3] .w.s.m.m.a.ServletInvocableHandlerMethod : Could not resolve parameter [0] in public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item): JSON parse error: Cannot construct instance of `com.example.VueDemo.entity.Item` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('wewrtr'); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.example.VueDemo.entity.Item` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('wewrtr')
+ at [Source: (PushbackInputStream); line: 1, column: 1]
+2019-07-24 21:05:34.078 DEBUG 24112 --- [http-nio-8088-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler public com.example.VueDemo.ResultError com.example.VueDemo.GlobalExceptionHandler.handleException(java.lang.RuntimeException)
+2019-07-24 21:05:34.102 DEBUG 24112 --- [http-nio-8088-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:05:34.103 DEBUG 24112 --- [http-nio-8088-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.VueDemo.ResultError@7e1f6b7e]
+2019-07-24 21:05:34.113 DEBUG 24112 --- [http-nio-8088-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.example.VueDemo.entity.Item` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('wewrtr'); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.example.VueDemo.entity.Item` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('wewrtr')
+ at [Source: (PushbackInputStream); line: 1, column: 1]]
+2019-07-24 21:05:34.114 DEBUG 24112 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:06:53.516 DEBUG 24112 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:06:53.518 DEBUG 24112 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:06:53.520 DEBUG 24112 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@7a108e13]
+2019-07-24 21:06:53.867 DEBUG 24112 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:06:53.873 DEBUG 24112 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:07:26.872 DEBUG 24112 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2019-07-24 21:07:26.874 DEBUG 24112 --- [http-nio-8088-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2019-07-24 21:07:26.905 DEBUG 24112 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:08:46.996 DEBUG 24112 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:08:47.001 DEBUG 24112 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:08:47.002 DEBUG 24112 --- [http-nio-8088-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@4f62e97]
+2019-07-24 21:08:47.009 DEBUG 24112 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:08:47.010 DEBUG 24112 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:08:48.681 DEBUG 24112 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:08:48.682 DEBUG 24112 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:08:48.684 DEBUG 24112 --- [http-nio-8088-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@24883c05]
+2019-07-24 21:08:48.687 DEBUG 24112 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:08:48.688 DEBUG 24112 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:08:49.607 DEBUG 24112 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:08:49.608 DEBUG 24112 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:08:49.609 DEBUG 24112 --- [http-nio-8088-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@5c5c56e8]
+2019-07-24 21:08:49.613 DEBUG 24112 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:08:49.614 DEBUG 24112 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:09:21.519 DEBUG 24112 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:09:21.521 DEBUG 24112 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:09:21.522 DEBUG 24112 --- [http-nio-8088-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@a932f31]
+2019-07-24 21:09:21.526 DEBUG 24112 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:09:21.527 DEBUG 24112 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:09:22.328 DEBUG 24112 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:09:22.329 DEBUG 24112 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:09:22.330 DEBUG 24112 --- [http-nio-8088-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@7385f2ef]
+2019-07-24 21:09:22.334 DEBUG 24112 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:09:22.334 DEBUG 24112 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:09:23.127 DEBUG 24112 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:09:23.128 DEBUG 24112 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:09:23.129 DEBUG 24112 --- [http-nio-8088-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@60f5baa]
+2019-07-24 21:09:23.133 DEBUG 24112 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:09:23.133 DEBUG 24112 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:11:15.908  INFO 21132 --- [main] com.example.VueDemo.VueDemoApplication   : Starting VueDemoApplication on LAPTOP-G9VCH9LD with PID 21132 (D:\github\vue_demo_back_end-master\out\production\classes started by Wille in D:\github\vue_demo_back_end-master)
+2019-07-24 21:11:15.916  INFO 21132 --- [main] com.example.VueDemo.VueDemoApplication   : The following profiles are active: local
+2019-07-24 21:11:17.620  INFO 21132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-24 21:11:17.712  INFO 21132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78ms. Found 1 repository interfaces.
+2019-07-24 21:11:18.365  INFO 21132 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c293d4e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-24 21:11:19.457  INFO 21132 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2019-07-24 21:11:19.598  INFO 21132 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-24 21:11:19.598  INFO 21132 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-24 21:11:19.885  INFO 21132 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-24 21:11:19.886 DEBUG 21132 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-07-24 21:11:19.886  INFO 21132 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3865 ms
+2019-07-24 21:11:20.587  INFO 21132 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-24 21:11:20.849  INFO 21132 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-24 21:11:22.427  INFO 21132 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 21:11:22.808 DEBUG 21132 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-24 21:11:23.158  INFO 21132 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-24 21:11:23.176 DEBUG 21132 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-24 21:11:23.226  WARN 21132 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-24 21:11:23.265 DEBUG 21132 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2019-07-24 21:11:23.278 DEBUG 21132 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-24 21:11:23.291 DEBUG 21132 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-24 21:11:23.655  INFO 21132 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-24 21:11:23.748  INFO 21132 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2019-07-24 21:11:23.753  INFO 21132 --- [main] com.example.VueDemo.VueDemoApplication   : Started VueDemoApplication in 8.779 seconds (JVM running for 9.633)
+2019-07-24 21:11:57.985  INFO 21132 --- [http-nio-8088-exec-9] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-24 21:11:57.985  INFO 21132 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-24 21:11:57.986 DEBUG 21132 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-07-24 21:11:57.997 DEBUG 21132 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-07-24 21:11:57.997  INFO 21132 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-07-24 21:11:58.001 DEBUG 21132 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:11:58.011 DEBUG 21132 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:11:58.136 DEBUG 21132 --- [http-nio-8088-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@7787959b]
+2019-07-24 21:11:58.454 DEBUG 21132 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:11:58.464 DEBUG 21132 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:12:03.307 DEBUG 21132 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:12:03.309 DEBUG 21132 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:12:03.313 DEBUG 21132 --- [http-nio-8088-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@1cb5da24]
+2019-07-24 21:12:03.327 DEBUG 21132 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:12:03.328 DEBUG 21132 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:12:04.048 DEBUG 21132 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:12:04.049 DEBUG 21132 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:12:04.050 DEBUG 21132 --- [http-nio-8088-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@1b8a0ed2]
+2019-07-24 21:12:04.054 DEBUG 21132 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:12:04.055 DEBUG 21132 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:12:04.944 DEBUG 21132 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:12:04.945 DEBUG 21132 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:12:04.946 DEBUG 21132 --- [http-nio-8088-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@4f3c4e7c]
+2019-07-24 21:12:04.949 DEBUG 21132 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:12:04.950 DEBUG 21132 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:16:41.195 DEBUG 21132 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : OPTIONS "//todos", parameters={}
+2019-07-24 21:16:41.197 DEBUG 21132 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:16:41.198 DEBUG 21132 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:16:41.215 DEBUG 21132 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:16:41.215 DEBUG 21132 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:16:41.217 DEBUG 21132 --- [http-nio-8088-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@7120586d]
+2019-07-24 21:16:41.221 DEBUG 21132 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:16:41.222 DEBUG 21132 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:21:37.303 DEBUG 21132 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "//todos", parameters={}
+2019-07-24 21:21:37.304 DEBUG 21132 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 21:21:37.312 DEBUG 21132 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:21:37.313 DEBUG 21132 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@2fe3c36a, com.example.VueDemo.entity.Item@777124c, com.example.VueD (truncated)...]
+2019-07-24 21:21:37.331 DEBUG 21132 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:22:00.946 DEBUG 21132 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:22:00.947 DEBUG 21132 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:22:00.948 DEBUG 21132 --- [http-nio-8088-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@534ba918]
+2019-07-24 21:22:00.952 DEBUG 21132 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:22:00.953 DEBUG 21132 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:22:02.167 DEBUG 21132 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:22:02.169 DEBUG 21132 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:22:02.170 DEBUG 21132 --- [http-nio-8088-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@7401d8d8]
+2019-07-24 21:22:02.175 DEBUG 21132 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:22:02.175 DEBUG 21132 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:23:05.409 DEBUG 21132 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : GET "//todos", parameters={}
+2019-07-24 21:23:05.410 DEBUG 21132 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 21:23:05.414 DEBUG 21132 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:23:05.415 DEBUG 21132 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@4fe42117, com.example.VueDemo.entity.Item@27763044, com.example.Vue (truncated)...]
+2019-07-24 21:23:05.416 DEBUG 21132 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:23:08.168 DEBUG 21132 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:23:08.171 DEBUG 21132 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:23:08.173 DEBUG 21132 --- [http-nio-8088-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@3e23da0a]
+2019-07-24 21:23:08.183 DEBUG 21132 --- [http-nio-8088-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler public com.example.VueDemo.ResultError com.example.VueDemo.GlobalExceptionHandler.handleException(java.lang.RuntimeException)
+2019-07-24 21:23:08.188 DEBUG 21132 --- [http-nio-8088-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:23:08.189 DEBUG 21132 --- [http-nio-8088-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.VueDemo.ResultError@6fcf61ed]
+2019-07-24 21:23:08.192 DEBUG 21132 --- [http-nio-8088-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.example.VueDemo.exception.BusinessException: 新增失败，已有相同项]
+2019-07-24 21:23:08.193 DEBUG 21132 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:23:11.572 DEBUG 21132 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:23:11.573 DEBUG 21132 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:23:11.575 DEBUG 21132 --- [http-nio-8088-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@48eb451f]
+2019-07-24 21:23:11.580 DEBUG 21132 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:23:11.581 DEBUG 21132 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:23:40.147 DEBUG 21132 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : GET "//todos", parameters={}
+2019-07-24 21:23:40.149 DEBUG 21132 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 21:23:40.152 DEBUG 21132 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:23:40.153 DEBUG 21132 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@6f6f4e26, com.example.VueDemo.entity.Item@5baeb12d, com.example.Vue (truncated)...]
+2019-07-24 21:23:40.156 DEBUG 21132 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:24:12.760 DEBUG 21132 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:24:12.761 DEBUG 21132 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:24:12.762 DEBUG 21132 --- [http-nio-8088-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@6bce85c1]
+2019-07-24 21:24:12.766 DEBUG 21132 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:24:12.766 DEBUG 21132 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:24:28.210 DEBUG 21132 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:24:28.212 DEBUG 21132 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:24:28.213 DEBUG 21132 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@4ede45f4]
+2019-07-24 21:24:28.216 DEBUG 21132 --- [http-nio-8088-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler public com.example.VueDemo.ResultError com.example.VueDemo.GlobalExceptionHandler.handleException(java.lang.RuntimeException)
+2019-07-24 21:24:28.218 DEBUG 21132 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:24:28.218 DEBUG 21132 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.VueDemo.ResultError@47023be6]
+2019-07-24 21:24:28.219 DEBUG 21132 --- [http-nio-8088-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.example.VueDemo.exception.BusinessException: 新增失败，已有相同项]
+2019-07-24 21:24:28.220 DEBUG 21132 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:24:29.607 DEBUG 21132 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:24:29.608 DEBUG 21132 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:24:29.609 DEBUG 21132 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@283c6ac5]
+2019-07-24 21:24:29.613 DEBUG 21132 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:24:29.613 DEBUG 21132 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:24:30.911 DEBUG 21132 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:24:30.912 DEBUG 21132 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:24:30.913 DEBUG 21132 --- [http-nio-8088-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@700efa99]
+2019-07-24 21:24:30.918 DEBUG 21132 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:24:30.919 DEBUG 21132 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:24:40.127 DEBUG 21132 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : GET "//todos", parameters={}
+2019-07-24 21:24:40.131 DEBUG 21132 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 21:24:40.135 DEBUG 21132 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:24:40.136 DEBUG 21132 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@61c64655, com.example.VueDemo.entity.Item@71a7ab2d, com.example.Vue (truncated)...]
+2019-07-24 21:24:40.137 DEBUG 21132 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:29:15.252 DEBUG 21132 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : GET "//todos", parameters={}
+2019-07-24 21:29:15.253 DEBUG 21132 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 21:29:15.257 DEBUG 21132 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:29:15.257 DEBUG 21132 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@7bf417bf, com.example.VueDemo.entity.Item@25c3fbb9, com.example.Vue (truncated)...]
+2019-07-24 21:29:15.259 DEBUG 21132 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:30:10.498 DEBUG 21132 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : GET "//todos", parameters={}
+2019-07-24 21:30:10.499 DEBUG 21132 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 21:30:10.501 DEBUG 21132 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:30:10.501 DEBUG 21132 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@7eab8512, com.example.VueDemo.entity.Item@6bfe9f5d, com.example.Vue (truncated)...]
+2019-07-24 21:30:10.503 DEBUG 21132 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:30:14.741 DEBUG 21132 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : GET "//todos", parameters={}
+2019-07-24 21:30:14.742 DEBUG 21132 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 21:30:14.744 DEBUG 21132 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:30:14.745 DEBUG 21132 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@781b2cb, com.example.VueDemo.entity.Item@5e7984d7, com.example.VueD (truncated)...]
+2019-07-24 21:30:14.746 DEBUG 21132 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:30:23.436 DEBUG 21132 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : GET "//todos", parameters={}
+2019-07-24 21:30:23.437 DEBUG 21132 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 21:30:23.440 DEBUG 21132 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:30:23.440 DEBUG 21132 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@1e41abf2, com.example.VueDemo.entity.Item@1b26162d, com.example.Vue (truncated)...]
+2019-07-24 21:30:23.441 DEBUG 21132 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:30:25.919 DEBUG 21132 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : OPTIONS "//todos", parameters={}
+2019-07-24 21:30:25.920 DEBUG 21132 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:30:25.921 DEBUG 21132 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:30:25.926 DEBUG 21132 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:30:25.927 DEBUG 21132 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:30:25.927 DEBUG 21132 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@131bf08a]
+2019-07-24 21:30:25.931 DEBUG 21132 --- [http-nio-8088-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler public com.example.VueDemo.ResultError com.example.VueDemo.GlobalExceptionHandler.handleException(java.lang.RuntimeException)
+2019-07-24 21:30:25.933 DEBUG 21132 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:30:25.933 DEBUG 21132 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.VueDemo.ResultError@6972e319]
+2019-07-24 21:30:25.934 DEBUG 21132 --- [http-nio-8088-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.example.VueDemo.exception.BusinessException: 新增失败，已有相同项]
+2019-07-24 21:30:25.935 DEBUG 21132 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:30:29.607 DEBUG 21132 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:30:29.608 DEBUG 21132 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:30:29.609 DEBUG 21132 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@fa8084e]
+2019-07-24 21:30:29.611 DEBUG 21132 --- [http-nio-8088-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler public com.example.VueDemo.ResultError com.example.VueDemo.GlobalExceptionHandler.handleException(java.lang.RuntimeException)
+2019-07-24 21:30:29.613 DEBUG 21132 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:30:29.613 DEBUG 21132 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.VueDemo.ResultError@6fa0c0f8]
+2019-07-24 21:30:29.614 DEBUG 21132 --- [http-nio-8088-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.example.VueDemo.exception.BusinessException: 新增失败，已有相同项]
+2019-07-24 21:30:29.614 DEBUG 21132 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:30:43.293 DEBUG 21132 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : GET "//todos", parameters={}
+2019-07-24 21:30:43.294 DEBUG 21132 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 21:30:43.297 DEBUG 21132 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:30:43.297 DEBUG 21132 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@3e792409, com.example.VueDemo.entity.Item@7051f7ae, com.example.Vue (truncated)...]
+2019-07-24 21:30:43.298 DEBUG 21132 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:30:47.215 DEBUG 21132 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:30:47.216 DEBUG 21132 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:30:47.217 DEBUG 21132 --- [http-nio-8088-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@720e34ac]
+2019-07-24 21:30:47.222 DEBUG 21132 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:30:47.222 DEBUG 21132 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:31:00.606 DEBUG 21132 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:31:00.607 DEBUG 21132 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:31:00.608 DEBUG 21132 --- [http-nio-8088-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@6b9e96b0]
+2019-07-24 21:31:00.612 DEBUG 21132 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:31:00.612 DEBUG 21132 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:31:34.375 DEBUG 21132 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:31:34.376 DEBUG 21132 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:31:34.377 DEBUG 21132 --- [http-nio-8088-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@21ca6190]
+2019-07-24 21:31:34.380 DEBUG 21132 --- [http-nio-8088-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler public com.example.VueDemo.ResultError com.example.VueDemo.GlobalExceptionHandler.handleException(java.lang.RuntimeException)
+2019-07-24 21:31:34.381 DEBUG 21132 --- [http-nio-8088-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:31:34.382 DEBUG 21132 --- [http-nio-8088-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.VueDemo.ResultError@6e8ff8d5]
+2019-07-24 21:31:34.382 DEBUG 21132 --- [http-nio-8088-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.example.VueDemo.exception.BusinessException: 新增失败，已有相同项]
+2019-07-24 21:31:34.383 DEBUG 21132 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:34:15.633 DEBUG 21132 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : GET "//todos", parameters={}
+2019-07-24 21:34:15.635 DEBUG 21132 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 21:34:15.638 DEBUG 21132 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:34:15.638 DEBUG 21132 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@6f2bcd85, com.example.VueDemo.entity.Item@67e132a5, com.example.Vue (truncated)...]
+2019-07-24 21:34:15.639 DEBUG 21132 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:34:21.921 DEBUG 21132 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : GET "//todos", parameters={}
+2019-07-24 21:34:21.923 DEBUG 21132 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 21:34:21.925 DEBUG 21132 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:34:21.926 DEBUG 21132 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@58dcc7ff, com.example.VueDemo.entity.Item@49efb5ad, com.example.Vue (truncated)...]
+2019-07-24 21:34:21.927 DEBUG 21132 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:34:26.455 DEBUG 21132 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:34:26.455 DEBUG 21132 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:34:26.457 DEBUG 21132 --- [http-nio-8088-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@6c4b3cb8]
+2019-07-24 21:34:26.461 DEBUG 21132 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:34:26.461 DEBUG 21132 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:34:31.680 DEBUG 21132 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : GET "//todos", parameters={}
+2019-07-24 21:34:31.682 DEBUG 21132 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 21:34:31.688 DEBUG 21132 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:34:31.688 DEBUG 21132 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@510e629d, com.example.VueDemo.entity.Item@7f289505, com.example.Vue (truncated)...]
+2019-07-24 21:34:31.689 DEBUG 21132 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:34:33.735 DEBUG 21132 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:34:33.736 DEBUG 21132 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:34:33.737 DEBUG 21132 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@505ae4f7]
+2019-07-24 21:34:33.742 DEBUG 21132 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:34:33.743 DEBUG 21132 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:38:27.317 DEBUG 21132 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/todos", parameters={}
+2019-07-24 21:38:27.318 DEBUG 21132 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 21:38:27.324 DEBUG 21132 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:38:27.324 DEBUG 21132 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@3e8a3499, com.example.VueDemo.entity.Item@702cf3f7, com.example.Vue (truncated)...]
+2019-07-24 21:38:27.325 DEBUG 21132 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:40:38.562 DEBUG 21132 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : GET "//todos", parameters={}
+2019-07-24 21:40:38.564 DEBUG 21132 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 21:40:38.568 DEBUG 21132 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:40:38.569 DEBUG 21132 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@15d07a55, com.example.VueDemo.entity.Item@496b1832, com.example.Vue (truncated)...]
+2019-07-24 21:40:38.570 DEBUG 21132 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:40:42.777 DEBUG 21132 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : GET "//todos", parameters={}
+2019-07-24 21:40:42.778 DEBUG 21132 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 21:40:42.780 DEBUG 21132 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:40:42.780 DEBUG 21132 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@15346688, com.example.VueDemo.entity.Item@5049afc4, com.example.Vue (truncated)...]
+2019-07-24 21:40:42.786 DEBUG 21132 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:41:46.377  INFO 15584 --- [main] com.example.VueDemo.VueDemoApplication   : Starting VueDemoApplication on LAPTOP-G9VCH9LD with PID 15584 (D:\github\vue_demo_back_end-master\out\production\classes started by Wille in D:\github\vue_demo_back_end-master)
+2019-07-24 21:41:46.380  INFO 15584 --- [main] com.example.VueDemo.VueDemoApplication   : The following profiles are active: local
+2019-07-24 21:41:48.253  INFO 15584 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-24 21:41:48.336  INFO 15584 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71ms. Found 1 repository interfaces.
+2019-07-24 21:41:48.900  INFO 15584 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d3e9552f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-24 21:41:49.716  INFO 15584 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2019-07-24 21:41:49.847  INFO 15584 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-24 21:41:49.848  INFO 15584 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-24 21:41:50.178  INFO 15584 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-24 21:41:50.179 DEBUG 15584 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-07-24 21:41:50.179  INFO 15584 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3724 ms
+2019-07-24 21:41:50.865  INFO 15584 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-24 21:41:51.184  INFO 15584 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-24 21:41:53.330  INFO 15584 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 21:41:53.734 DEBUG 15584 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-24 21:41:54.093  INFO 15584 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-24 21:41:54.109 DEBUG 15584 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-24 21:41:54.159  WARN 15584 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-24 21:41:54.196 DEBUG 15584 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2019-07-24 21:41:54.208 DEBUG 15584 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-24 21:41:54.218 DEBUG 15584 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-24 21:41:54.538  INFO 15584 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-24 21:41:54.627  INFO 15584 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2019-07-24 21:41:54.628  INFO 15584 --- [main] com.example.VueDemo.VueDemoApplication   : Started VueDemoApplication in 9.232 seconds (JVM running for 10.122)
+2019-07-24 21:42:22.639  INFO 15584 --- [http-nio-8088-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-24 21:42:22.639  INFO 15584 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-24 21:42:22.640 DEBUG 15584 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-07-24 21:42:22.658 DEBUG 15584 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-07-24 21:42:22.659  INFO 15584 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2019-07-24 21:42:22.661 DEBUG 15584 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : GET "//todos", parameters={}
+2019-07-24 21:42:22.673 DEBUG 15584 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 21:42:23.447 DEBUG 15584 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:42:23.448 DEBUG 15584 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[]]
+2019-07-24 21:42:23.485 DEBUG 15584 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:42:25.024 DEBUG 15584 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : OPTIONS "//todos", parameters={}
+2019-07-24 21:42:25.024 DEBUG 15584 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:42:25.027 DEBUG 15584 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:42:25.039 DEBUG 15584 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:42:25.040 DEBUG 15584 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:42:25.112 DEBUG 15584 --- [http-nio-8088-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@5d9b4419]
+2019-07-24 21:42:25.172 DEBUG 15584 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:42:25.175 DEBUG 15584 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:44:51.231 DEBUG 15584 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : GET "//todos", parameters={}
+2019-07-24 21:44:51.232 DEBUG 15584 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 21:44:51.274 DEBUG 15584 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:44:51.274 DEBUG 15584 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@40e93505]]
+2019-07-24 21:44:51.288 DEBUG 15584 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:44:54.142 DEBUG 15584 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : OPTIONS "//todos", parameters={}
+2019-07-24 21:44:54.143 DEBUG 15584 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:44:54.144 DEBUG 15584 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:44:54.151 DEBUG 15584 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:44:54.152 DEBUG 15584 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:44:54.153 DEBUG 15584 --- [http-nio-8088-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@76426571]
+2019-07-24 21:44:54.182 DEBUG 15584 --- [http-nio-8088-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler public com.example.VueDemo.ResultError com.example.VueDemo.GlobalExceptionHandler.handleException(java.lang.RuntimeException)
+2019-07-24 21:44:54.187 DEBUG 15584 --- [http-nio-8088-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:44:54.187 DEBUG 15584 --- [http-nio-8088-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.VueDemo.ResultError@878be7b]
+2019-07-24 21:44:54.190 DEBUG 15584 --- [http-nio-8088-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.example.VueDemo.exception.BusinessException: 新增失败，已有相同项]
+2019-07-24 21:44:54.190 DEBUG 15584 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:44:58.238 DEBUG 15584 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:44:58.239 DEBUG 15584 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:44:58.241 DEBUG 15584 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@5912f320]
+2019-07-24 21:44:58.244 DEBUG 15584 --- [http-nio-8088-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler public com.example.VueDemo.ResultError com.example.VueDemo.GlobalExceptionHandler.handleException(java.lang.RuntimeException)
+2019-07-24 21:44:58.246 DEBUG 15584 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:44:58.247 DEBUG 15584 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.VueDemo.ResultError@72b89111]
+2019-07-24 21:44:58.248 DEBUG 15584 --- [http-nio-8088-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.example.VueDemo.exception.BusinessException: 新增失败，已有相同项]
+2019-07-24 21:44:58.248 DEBUG 15584 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:45:12.563 DEBUG 15584 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/todos", parameters={}
+2019-07-24 21:45:12.564 DEBUG 15584 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 21:45:12.565 DEBUG 15584 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:45:12.566 DEBUG 15584 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@59769c92]]
+2019-07-24 21:45:12.567 DEBUG 15584 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:45:18.188 DEBUG 15584 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : GET "//todos", parameters={}
+2019-07-24 21:45:18.189 DEBUG 15584 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 21:45:18.192 DEBUG 15584 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:45:18.192 DEBUG 15584 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@232059ce]]
+2019-07-24 21:45:18.193 DEBUG 15584 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:45:31.303 DEBUG 15584 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:45:31.304 DEBUG 15584 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:45:31.305 DEBUG 15584 --- [http-nio-8088-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@66fa83a0]
+2019-07-24 21:45:31.312 DEBUG 15584 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:45:31.313 DEBUG 15584 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:45:36.177 DEBUG 15584 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : GET "//todos", parameters={}
+2019-07-24 21:45:36.178 DEBUG 15584 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 21:45:36.184 DEBUG 15584 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:45:36.184 DEBUG 15584 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@7e305444, com.example.VueDemo.entity.Item@394e3ae3]]
+2019-07-24 21:45:36.186 DEBUG 15584 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:45:39.734 DEBUG 15584 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:45:39.735 DEBUG 15584 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:45:39.737 DEBUG 15584 --- [http-nio-8088-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@e94fe41]
+2019-07-24 21:45:39.742 DEBUG 15584 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:45:39.743 DEBUG 15584 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:47:55.633 DEBUG 15584 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:47:55.634 DEBUG 15584 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:47:55.636 DEBUG 15584 --- [http-nio-8088-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@78844a44]
+2019-07-24 21:47:55.641 DEBUG 15584 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:47:55.641 DEBUG 15584 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:47:59.110 DEBUG 15584 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:47:59.111 DEBUG 15584 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:47:59.112 DEBUG 15584 --- [http-nio-8088-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@5fb0a511]
+2019-07-24 21:47:59.115 DEBUG 15584 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:47:59.116 DEBUG 15584 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:48:00.510 DEBUG 15584 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:48:00.511 DEBUG 15584 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:48:00.512 DEBUG 15584 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@3e75be7f]
+2019-07-24 21:48:00.515 DEBUG 15584 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:48:00.516 DEBUG 15584 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:48:04.378 DEBUG 15584 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:48:04.379 DEBUG 15584 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:48:04.381 DEBUG 15584 --- [http-nio-8088-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@d534da8]
+2019-07-24 21:48:04.385 DEBUG 15584 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:48:04.385 DEBUG 15584 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:48:05.239 DEBUG 15584 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:48:05.239 DEBUG 15584 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:48:05.239 DEBUG 15584 --- [http-nio-8088-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@1916f205]
+2019-07-24 21:48:05.244 DEBUG 15584 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:48:05.244 DEBUG 15584 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:48:09.464 DEBUG 15584 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/todos", parameters={}
+2019-07-24 21:48:09.465 DEBUG 15584 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 21:48:09.468 DEBUG 15584 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:48:09.469 DEBUG 15584 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@14c0168d, com.example.VueDemo.entity.Item@79051ce, com.example.VueD (truncated)...]
+2019-07-24 21:48:09.470 DEBUG 15584 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:48:33.181 DEBUG 15584 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "//todos", parameters={}
+2019-07-24 21:48:33.182 DEBUG 15584 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 21:48:33.184 DEBUG 15584 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:48:33.185 DEBUG 15584 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@5dcedbff, com.example.VueDemo.entity.Item@762ff6db, com.example.Vue (truncated)...]
+2019-07-24 21:48:33.186 DEBUG 15584 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:49:46.866 DEBUG 15584 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : GET "//todos", parameters={}
+2019-07-24 21:49:46.867 DEBUG 15584 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 21:49:46.871 DEBUG 15584 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:49:46.871 DEBUG 15584 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@6d323472, com.example.VueDemo.entity.Item@56b339f5, com.example.Vue (truncated)...]
+2019-07-24 21:49:46.872 DEBUG 15584 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:50:05.721 DEBUG 15584 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : GET "//todos", parameters={}
+2019-07-24 21:50:05.722 DEBUG 15584 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 21:50:05.725 DEBUG 15584 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:50:05.725 DEBUG 15584 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@28d74ec, com.example.VueDemo.entity.Item@7eea59d5, com.example.VueD (truncated)...]
+2019-07-24 21:50:05.726 DEBUG 15584 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:50:10.075 DEBUG 15584 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : GET "//todos", parameters={}
+2019-07-24 21:50:10.076 DEBUG 15584 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 21:50:10.080 DEBUG 15584 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:50:10.080 DEBUG 15584 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@dd2a282, com.example.VueDemo.entity.Item@71a6c0db, com.example.VueD (truncated)...]
+2019-07-24 21:50:10.081 DEBUG 15584 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:50:15.513 DEBUG 15584 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:50:15.514 DEBUG 15584 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:50:15.515 DEBUG 15584 --- [http-nio-8088-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@2b228bb5]
+2019-07-24 21:50:15.518 DEBUG 15584 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:50:15.518 DEBUG 15584 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:50:23.461 DEBUG 15584 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:50:23.462 DEBUG 15584 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:50:23.463 DEBUG 15584 --- [http-nio-8088-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@22966364]
+2019-07-24 21:50:23.475 DEBUG 15584 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:50:23.476 DEBUG 15584 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:50:34.223 DEBUG 15584 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:50:34.224 DEBUG 15584 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:50:34.225 DEBUG 15584 --- [http-nio-8088-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@4563c926]
+2019-07-24 21:50:34.229 DEBUG 15584 --- [http-nio-8088-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler public com.example.VueDemo.ResultError com.example.VueDemo.GlobalExceptionHandler.handleException(java.lang.RuntimeException)
+2019-07-24 21:50:34.231 DEBUG 15584 --- [http-nio-8088-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:50:34.231 DEBUG 15584 --- [http-nio-8088-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.VueDemo.ResultError@590f969d]
+2019-07-24 21:50:34.231 DEBUG 15584 --- [http-nio-8088-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.example.VueDemo.exception.BusinessException: 新增失败，已有相同项]
+2019-07-24 21:50:34.232 DEBUG 15584 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:50:35.343 DEBUG 15584 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:50:35.343 DEBUG 15584 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:50:35.344 DEBUG 15584 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@4c85f264]
+2019-07-24 21:50:35.347 DEBUG 15584 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:50:35.348 DEBUG 15584 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:51:53.317 DEBUG 15584 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : GET "//todos", parameters={}
+2019-07-24 21:51:53.317 DEBUG 15584 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 21:51:53.325 DEBUG 15584 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:51:53.325 DEBUG 15584 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@427391d0, com.example.VueDemo.entity.Item@2bc2e330, com.example.Vue (truncated)...]
+2019-07-24 21:51:53.326 DEBUG 15584 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:51:56.875 DEBUG 15584 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : GET "//todos", parameters={}
+2019-07-24 21:51:56.875 DEBUG 15584 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 21:51:56.878 DEBUG 15584 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:51:56.878 DEBUG 15584 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@41c522a1, com.example.VueDemo.entity.Item@6eb59d7a, com.example.Vue (truncated)...]
+2019-07-24 21:51:56.879 DEBUG 15584 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:52:00.670 DEBUG 15584 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:52:00.671 DEBUG 15584 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:52:00.672 DEBUG 15584 --- [http-nio-8088-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@1d134558]
+2019-07-24 21:52:00.676 DEBUG 15584 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:52:00.677 DEBUG 15584 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:56:50.883 DEBUG 15584 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "//todos", parameters={}
+2019-07-24 21:56:50.884 DEBUG 15584 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 21:56:50.888 DEBUG 15584 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:56:50.888 DEBUG 15584 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@1f9f5f29, com.example.VueDemo.entity.Item@30018db5, com.example.Vue (truncated)...]
+2019-07-24 21:56:50.889 DEBUG 15584 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:56:54.275 DEBUG 15584 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : GET "//todos", parameters={}
+2019-07-24 21:56:54.276 DEBUG 15584 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 21:56:54.279 DEBUG 15584 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:56:54.279 DEBUG 15584 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@26cfb7ee, com.example.VueDemo.entity.Item@3f98c140, com.example.Vue (truncated)...]
+2019-07-24 21:56:54.280 DEBUG 15584 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:57:23.187 DEBUG 15584 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : GET "//todos", parameters={}
+2019-07-24 21:57:23.188 DEBUG 15584 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 21:57:23.191 DEBUG 15584 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:57:23.191 DEBUG 15584 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@2b1b3423, com.example.VueDemo.entity.Item@458e5887, com.example.Vue (truncated)...]
+2019-07-24 21:57:23.192 DEBUG 15584 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:57:35.328 DEBUG 15584 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : GET "//todos", parameters={}
+2019-07-24 21:57:35.329 DEBUG 15584 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 21:57:35.332 DEBUG 15584 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:57:35.333 DEBUG 15584 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@622ae586, com.example.VueDemo.entity.Item@1daad224, com.example.Vue (truncated)...]
+2019-07-24 21:57:35.333 DEBUG 15584 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:57:38.247 DEBUG 15584 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : OPTIONS "//todos", parameters={}
+2019-07-24 21:57:38.247 DEBUG 15584 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:57:38.248 DEBUG 15584 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:57:38.253 DEBUG 15584 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:57:38.253 DEBUG 15584 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:57:38.254 DEBUG 15584 --- [http-nio-8088-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@20b0b731]
+2019-07-24 21:57:38.260 DEBUG 15584 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:57:38.260 DEBUG 15584 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:57:40.268 DEBUG 15584 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:57:40.269 DEBUG 15584 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:57:40.270 DEBUG 15584 --- [http-nio-8088-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@34607b8d]
+2019-07-24 21:57:40.276 DEBUG 15584 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:57:40.277 DEBUG 15584 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:57:41.070 DEBUG 15584 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:57:41.071 DEBUG 15584 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:57:41.072 DEBUG 15584 --- [http-nio-8088-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@34409f9e]
+2019-07-24 21:57:41.077 DEBUG 15584 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:57:41.078 DEBUG 15584 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:57:42.413 DEBUG 15584 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:57:42.414 DEBUG 15584 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:57:42.415 DEBUG 15584 --- [http-nio-8088-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@36bde5b2]
+2019-07-24 21:57:42.416 DEBUG 15584 --- [http-nio-8088-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler public com.example.VueDemo.ResultError com.example.VueDemo.GlobalExceptionHandler.handleException(java.lang.RuntimeException)
+2019-07-24 21:57:42.418 DEBUG 15584 --- [http-nio-8088-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:57:42.418 DEBUG 15584 --- [http-nio-8088-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.VueDemo.ResultError@7a0d4474]
+2019-07-24 21:57:42.419 DEBUG 15584 --- [http-nio-8088-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.example.VueDemo.exception.BusinessException: 新增失败，已有相同项]
+2019-07-24 21:57:42.420 DEBUG 15584 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:57:43.542 DEBUG 15584 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:57:43.542 DEBUG 15584 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:57:43.543 DEBUG 15584 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@75e9546e]
+2019-07-24 21:57:43.545 DEBUG 15584 --- [http-nio-8088-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler public com.example.VueDemo.ResultError com.example.VueDemo.GlobalExceptionHandler.handleException(java.lang.RuntimeException)
+2019-07-24 21:57:43.627 DEBUG 15584 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:57:43.627 DEBUG 15584 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.VueDemo.ResultError@57beb9c3]
+2019-07-24 21:57:43.628 DEBUG 15584 --- [http-nio-8088-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.example.VueDemo.exception.BusinessException: 新增失败，已有相同项]
+2019-07-24 21:57:43.629 DEBUG 15584 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 21:57:44.606 DEBUG 15584 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 21:57:44.606 DEBUG 15584 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 21:57:44.607 DEBUG 15584 --- [http-nio-8088-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@74985356]
+2019-07-24 21:57:44.611 DEBUG 15584 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 21:57:44.611 DEBUG 15584 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 21:59:34.640 DEBUG 15584 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : GET "//todos", parameters={}
+2019-07-24 21:59:34.641 DEBUG 15584 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 21:59:34.644 DEBUG 15584 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 21:59:34.644 DEBUG 15584 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@77d149f9, com.example.VueDemo.entity.Item@1ff84271, com.example.Vue (truncated)...]
+2019-07-24 21:59:34.646 DEBUG 15584 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 22:00:29.082 DEBUG 15584 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/todos", parameters={}
+2019-07-24 22:00:29.083 DEBUG 15584 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 22:00:29.085 DEBUG 15584 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 22:00:29.086 DEBUG 15584 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@558cb85f, com.example.VueDemo.entity.Item@1022fedd, com.example.Vue (truncated)...]
+2019-07-24 22:00:29.086 DEBUG 15584 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 22:00:41.208 DEBUG 15584 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 22:00:41.209 DEBUG 15584 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.addNewItem(com.example.VueDemo.entity.Item)
+2019-07-24 22:00:41.210 DEBUG 15584 --- [http-nio-8088-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.VueDemo.entity.Item@6e89c429]
+2019-07-24 22:00:41.214 DEBUG 15584 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 22:00:41.214 DEBUG 15584 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 22:03:21.769 DEBUG 15584 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "//todos", parameters={}
+2019-07-24 22:03:21.770 DEBUG 15584 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 22:03:21.773 DEBUG 15584 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 22:03:21.773 DEBUG 15584 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@5d7cd5c4, com.example.VueDemo.entity.Item@1f74bd03, com.example.Vue (truncated)...]
+2019-07-24 22:03:21.774 DEBUG 15584 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 22:05:13.598 DEBUG 15584 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : GET "//todos", parameters={}
+2019-07-24 22:05:13.598 DEBUG 15584 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 22:05:13.601 DEBUG 15584 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 22:05:13.602 DEBUG 15584 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@29f56c38, com.example.VueDemo.entity.Item@5e4de10b, com.example.Vue (truncated)...]
+2019-07-24 22:05:13.603 DEBUG 15584 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 22:05:23.287 DEBUG 15584 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : GET "//todos", parameters={}
+2019-07-24 22:05:23.287 DEBUG 15584 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 22:05:23.290 DEBUG 15584 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 22:05:23.290 DEBUG 15584 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@17db7e32, com.example.VueDemo.entity.Item@5897efec, com.example.Vue (truncated)...]
+2019-07-24 22:05:23.291 DEBUG 15584 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 22:09:13.759 DEBUG 15584 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : GET "//todos", parameters={}
+2019-07-24 22:09:13.760 DEBUG 15584 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 22:09:13.764 DEBUG 15584 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 22:09:13.765 DEBUG 15584 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@7cfbae7c, com.example.VueDemo.entity.Item@363a8c7b, com.example.Vue (truncated)...]
+2019-07-24 22:09:13.766 DEBUG 15584 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 22:11:11.772 DEBUG 15584 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : GET "//todos", parameters={}
+2019-07-24 22:11:11.773 DEBUG 15584 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.VueDemo.controller.ItemController.getAllItem()
+2019-07-24 22:11:11.775 DEBUG 15584 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 22:11:11.776 DEBUG 15584 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.VueDemo.entity.Item@6f49a362, com.example.VueDemo.entity.Item@7f4676, com.example.VueDe (truncated)...]
+2019-07-24 22:11:11.776 DEBUG 15584 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 22:49:05.495  INFO 2396 --- [main] com.example.todolist.VueDemoApplication  : Starting VueDemoApplication on LAPTOP-G9VCH9LD with PID 2396 (D:\github\vue_demo_back_end-master\out\production\classes started by Wille in D:\github\vue_demo_back_end-master)
+2019-07-24 22:49:05.519  INFO 2396 --- [main] com.example.todolist.VueDemoApplication  : The following profiles are active: local
+2019-07-24 22:49:06.853  INFO 2396 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-24 22:49:06.976  INFO 2396 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 101ms. Found 1 repository interfaces.
+2019-07-24 22:49:07.640  INFO 2396 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$93229930] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-24 22:49:08.497  INFO 2396 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2019-07-24 22:49:08.630  INFO 2396 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-24 22:49:08.631  INFO 2396 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-24 22:49:08.942  INFO 2396 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-24 22:49:08.943 DEBUG 2396 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-07-24 22:49:08.943  INFO 2396 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3348 ms
+2019-07-24 22:49:09.832  INFO 2396 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-24 22:49:10.125  INFO 2396 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-24 22:49:12.072  INFO 2396 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 22:49:12.463 DEBUG 2396 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-24 22:49:12.874  INFO 2396 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-24 22:49:12.904 DEBUG 2396 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-24 22:49:12.970  WARN 2396 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-24 22:49:13.015 DEBUG 2396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2019-07-24 22:49:13.031 DEBUG 2396 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-24 22:49:13.041 DEBUG 2396 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-24 22:49:13.381  INFO 2396 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-24 22:49:13.486  INFO 2396 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2019-07-24 22:49:13.497  INFO 2396 --- [main] com.example.todolist.VueDemoApplication  : Started VueDemoApplication in 9.004 seconds (JVM running for 9.852)
+2019-07-24 22:49:28.370  INFO 2396 --- [http-nio-8088-exec-9] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-24 22:49:28.371  INFO 2396 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-24 22:49:28.371 DEBUG 2396 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-07-24 22:49:28.399 DEBUG 2396 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-07-24 22:49:28.401  INFO 2396 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed initialization in 30 ms
+2019-07-24 22:49:28.481 DEBUG 2396 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : GET "//todos", parameters={}
+2019-07-24 22:49:28.495 DEBUG 2396 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.todolist.controller.ItemController.getAllItem()
+2019-07-24 22:49:29.124 DEBUG 2396 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 22:49:29.124 DEBUG 2396 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[]]
+2019-07-24 22:49:29.178 DEBUG 2396 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 22:49:30.405 DEBUG 2396 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : OPTIONS "//todos", parameters={}
+2019-07-24 22:49:30.406 DEBUG 2396 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.todolist.controller.ItemController.addItem(com.example.todolist.entity.Item)
+2019-07-24 22:49:30.408 DEBUG 2396 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 22:49:30.421 DEBUG 2396 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 22:49:30.422 DEBUG 2396 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.todolist.controller.ItemController.addItem(com.example.todolist.entity.Item)
+2019-07-24 22:49:30.489 DEBUG 2396 --- [http-nio-8088-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.todolist.entity.Item@1532a495]
+2019-07-24 22:49:30.586 DEBUG 2396 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 22:49:30.589 DEBUG 2396 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 22:49:31.934 DEBUG 2396 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 22:49:31.935 DEBUG 2396 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.todolist.controller.ItemController.addItem(com.example.todolist.entity.Item)
+2019-07-24 22:49:31.937 DEBUG 2396 --- [http-nio-8088-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.todolist.entity.Item@760d7e9e]
+2019-07-24 22:49:31.947 DEBUG 2396 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 22:49:31.947 DEBUG 2396 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 22:49:45.312 DEBUG 2396 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2019-07-24 22:49:45.317 DEBUG 2396 --- [http-nio-8088-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2019-07-24 22:49:45.328 DEBUG 2396 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2019-07-24 22:49:56.580 DEBUG 2396 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/todos", parameters={}
+2019-07-24 22:49:56.581 DEBUG 2396 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.todolist.controller.ItemController.getAllItem()
+2019-07-24 22:49:56.584 DEBUG 2396 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-24 22:49:56.584 DEBUG 2396 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.todolist.entity.Item@1cbe8d20, com.example.todolist.entity.Item@506a1984]]
+2019-07-24 22:49:56.596 DEBUG 2396 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-24 22:50:07.364 DEBUG 2396 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : POST "//todos", parameters={}
+2019-07-24 22:50:07.365 DEBUG 2396 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity com.example.todolist.controller.ItemController.addItem(com.example.todolist.entity.Item)
+2019-07-24 22:50:07.366 DEBUG 2396 --- [http-nio-8088-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.todolist.entity.Item@62369753]
+2019-07-24 22:50:07.369 DEBUG 2396 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2019-07-24 22:50:07.369 DEBUG 2396 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-07-24 23:57:32.491  INFO 11824 --- [main] com.example.todolist.VueDemoApplication  : Starting VueDemoApplication on LAPTOP-G9VCH9LD with PID 11824 (D:\github\vue_demo_back_end-master\out\production\classes started by Wille in D:\github\vue_demo_back_end-master)
+2019-07-24 23:57:32.494  INFO 11824 --- [main] com.example.todolist.VueDemoApplication  : The following profiles are active: local
+2019-07-24 23:57:34.689  INFO 11824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-24 23:57:34.820  INFO 11824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109ms. Found 1 repository interfaces.
+2019-07-24 23:57:35.460  INFO 11824 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c0357f07] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-24 23:57:36.265  INFO 11824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2019-07-24 23:57:36.385  INFO 11824 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-24 23:57:36.386  INFO 11824 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-24 23:57:36.682  INFO 11824 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-24 23:57:36.683 DEBUG 11824 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-07-24 23:57:36.683  INFO 11824 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4120 ms
+2019-07-24 23:57:37.373  INFO 11824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-24 23:57:37.635  INFO 11824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-24 23:57:39.720  INFO 11824 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 23:57:40.193 DEBUG 11824 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-24 23:57:40.570  INFO 11824 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-24 23:57:40.583 DEBUG 11824 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-24 23:57:40.641  WARN 11824 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-24 23:57:40.681 DEBUG 11824 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2019-07-24 23:57:40.702 DEBUG 11824 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-24 23:57:40.714 DEBUG 11824 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-24 23:57:41.059  INFO 11824 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-24 23:57:41.156  INFO 11824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2019-07-24 23:57:41.163  INFO 11824 --- [main] com.example.todolist.VueDemoApplication  : Started VueDemoApplication in 9.569 seconds (JVM running for 10.553)
